@@ -1,6 +1,6 @@
 # 🚀 3D Developer Portfolio Website (React + TypeScript + Three.js)
 
-[![3D portfolio preview (click to watch video)](./Screenshot 2026-06-27 135827.png)](./screen-capture%20(13).webm)
+[![3D portfolio preview (click to watch video)](./Screenshot_2026.png)](./screen-capture%20(13).webm)
 
 A modern, high-performance **3D developer portfolio website** built with **React**, **TypeScript**, **Three.js**, **GSAP**, and **WebGL**.
 
