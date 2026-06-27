@@ -1,3 +1,5 @@
+import vacayVibeImage from "./assets/vacayvibe.png";
+
 export const config = {
     developer: {
         name: "Gaurav",
@@ -75,7 +77,7 @@ export const config = {
             title: "VacayVibe",
             category: "Full Stack / Booking Platform",
             technologies: "Node.js, Express, MongoDB, Mongoose, EJS, Passport.js, Cloudinary, Mapbox, Multer, Joi",
-            image: "/images/vacayvibe.png",
+            image: vacayVibeImage,
             description: "An Airbnb-inspired vacation and property booking platform built with Node.js + Express MVC architecture and server-side EJS rendering. Features Passport.js authentication, Cloudinary image uploads, Mapbox interactive maps, Multer file handling, MongoDB session persistence, and Joi validation — deployed on Render.",
             link: "https://vacayvibe.onrender.com/"
         },
