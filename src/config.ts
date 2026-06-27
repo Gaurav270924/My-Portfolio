@@ -1,193 +1,114 @@
 export const config = {
     developer: {
-        name: "Redoyanul",
-        fullName: "Redoyanul Haque",
-        title: "AI & Full-Stack Developer",
-        description: "AI & Full-Stack Developer building intelligent systems and modern web applications. Passionate about machine learning, deep learning, and creating next-gen autonomous agents."
+        name: "Gaurav",
+        fullName: "Gaurav Yadav",
+        title: "Full-Stack Developer",
+        description: "Full-Stack Developer specializing in MERN stack and Laravel/PHP, building scalable web applications, RESTful APIs, and AI-powered platforms."
     },
     social: {
-        github: "red1-for-hek",
-        email: "redoyanul1234@gmail.com",
-        location: "Bangladesh"
+        github: "Gaurav270924",
+        email: "gaurav249y@gmail.com",
+        location: "Lucknow, India"
     },
     about: {
         title: "About Me",
-        description: "I am a self-taught AI & Full-Stack Developer from Bangladesh. I build intelligent systems, chatbots, and modern web applications. My expertise includes Machine Learning, Deep Learning, NLP, and Full-Stack Web Development with React, Node.js, and Python. Currently building next-gen AI Agents and JARVIS-like Personal Assistants. I have a competitive programming mindset and a deep passion for automation. Code is poetry, AI is the canvas."
+        description: "I am a Computer Science and Engineering graduate (BTech, SGPA 8.0) from Babu Banarasi Das Institute of Technology and Management, Lucknow (2025). Currently working as an Associate Software Engineer at 3EA Limited, I specialize in building full-stack web applications using the MERN stack and Laravel/PHP. I have hands-on experience developing RESTful APIs, a production Laravel-based HRMS, and AI-powered platforms. With 300+ LeetCode problems solved, I am passionate about writing clean, scalable code and turning complex requirements into elegant software solutions."
     },
     experiences: [
         {
-            position: "Learning Something New",
-            company: "Self-Development",
-            period: "2025 - Present",
-            location: "Bangladesh",
-            description: "Continuously exploring emerging technologies, researching advanced AI systems, and pushing the boundaries of what's possible in tech.",
+            position: "Associate Software Engineer",
+            company: "3EA Limited",
+            period: "Aug 2025 - Present",
+            location: "Lucknow, Uttar Pradesh",
+            description: "Contributing to live production projects using PHP and Laravel. Developed and integrated RESTful APIs and independently built a Laravel-based HRMS for Hera Public School, enabling staff attendance tracking, leave workflows, and automated payroll generation.",
             responsibilities: [
-                "Researching cutting-edge AI and ML technologies",
-                "Experimenting with new frameworks and tools",
-                "Contributing to open-source projects",
-                "Building innovative personal projects"
+                "Successfully completed an 8-month, industry-focused web development internship, contributing to live production projects using PHP and Laravel",
+                "Developed and integrated RESTful APIs with front-end interfaces to ensure smooth and efficient data exchange",
+                "Independently developed and deployed a Laravel-based HRMS for Hera Public School, enabling staff attendance tracking, leave workflows, and automated payroll generation"
             ],
-            technologies: ["Research", "Innovation", "Open Source", "New Tech"]
+            technologies: ["PHP", "Laravel", "RESTful APIs", "MySQL", "MVC Architecture"]
         },
         {
-            position: "AI Engineer",
-            company: "Freelance & Projects",
-            period: "2025",
-            location: "Bangladesh",
-            description: "Developing intelligent AI systems, chatbots, and machine learning solutions. Building next-gen conversational AI agents and JARVIS-like personal assistants.",
+            position: "MERN Stack Development Intern",
+            company: "Shape My Skills",
+            period: "July 2024 - Sept. 2024",
+            location: "Lucknow, Uttar Pradesh",
+            description: "Gained hands-on experience with the full MERN stack — MongoDB, Express.js, React.js, and Node.js. Built responsive front-end components, integrated back-end services, and leveraged AI-assisted development tools to improve debugging and API performance.",
             responsibilities: [
-                "Building AI-powered chatbots and conversational agents",
-                "Developing machine learning models with TensorFlow and PyTorch",
-                "Working with LLMs and transformer architectures",
-                "Creating autonomous AI systems and automation tools"
+                "Completed an internship at ShapeMySkills, gaining hands-on experience with the MERN stack, including MongoDB, Express.js, React.js, and Node.js",
+                "Created responsive and dynamic front-end components using React.js and integrated them with back-end services built on Node.js and Express.js",
+                "Leveraged AI-assisted development tools to improve debugging workflows and optimize API performance"
             ],
-            technologies: ["Python", "TensorFlow", "PyTorch", "LLMs", "NLP", "AI Agents"]
-        },
-        {
-            position: "Full-Stack Developer",
-            company: "Freelance & Projects",
-            period: "2024",
-            location: "Bangladesh",
-            description: "Built complete web applications from frontend to backend. Developed responsive UIs, RESTful APIs, and database solutions for various clients and projects.",
-            responsibilities: [
-                "Developing full-stack web applications using React and Node.js",
-                "Building RESTful APIs and integrating databases",
-                "Creating responsive and interactive user interfaces",
-                "Deploying and maintaining web applications"
-            ],
-            technologies: ["React", "Node.js", "MongoDB", "Express", "Next.js", "TypeScript"]
-        },
-        {
-            position: "Python Developer",
-            company: "Self-Taught & Projects",
-            period: "2023",
-            location: "Bangladesh",
-            description: "Dove deep into Python programming, building automation scripts, bots, and mastering the fundamentals of software development and problem-solving.",
-            responsibilities: [
-                "Learning Python programming and core concepts",
-                "Building automation scripts and Discord bots",
-                "Exploring data structures and algorithms",
-                "Participating in competitive programming"
-            ],
-            technologies: ["Python", "Automation", "Scripting", "Discord.py", "Problem Solving"]
-        },
-        {
-            position: "Graphic Designer",
-            company: "Freelance",
-            period: "2022",
-            location: "Bangladesh",
-            description: "Started my creative journey as a graphic designer, creating logos, banners, and visual content. This sparked my passion for technology and digital creation.",
-            responsibilities: [
-                "Designing logos and brand identity materials",
-                "Creating social media graphics and banners",
-                "Working with clients on creative projects",
-                "Learning design principles and visual aesthetics"
-            ],
-            technologies: ["Photoshop", "Illustrator", "Canva", "Figma", "Visual Design"]
-        },
-        {
-            position: "Microsoft Office",
-            company: "Begin Learning",
-            period: "2021",
-            location: "Bangladesh",
-            description: "Started my journey into the digital world by learning Microsoft Office tools. This foundational step introduced me to computers and sparked my curiosity for technology.",
-            responsibilities: [
-                "Learning Microsoft Word, Excel, and PowerPoint",
-                "Creating documents and presentations",
-                "Understanding basic computer operations",
-                "Building foundational digital skills"
-            ],
-            technologies: ["MS Word", "MS Excel", "MS PowerPoint", "Computer Basics"]
+            technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "RESTful APIs"]
         }
     ],
     projects: [
         {
             id: 1,
-            title: "Drishti",
-            category: "AI / LLM",
-            technologies: "Python, PyTorch, Transformers, FastAPI, React, MongoDB",
-            image: "/images/drishti.png",
-            description: "Bangladesh's first intelligent advanced AI chatbot powered by a custom Large Language Model. Features natural language understanding, contextual conversations, and multilingual support including Bengali."
+            title: "Recruitment & Induction System",
+            category: "Full Stack / MVC",
+            technologies: "Laravel, PHP, React 18, Inertia.js, Tailwind CSS, MySQL, Chart.js, Recharts, React Quill, html2pdf.js, SweetAlert2",
+            image: "/images/rsi.png",
+            description: "An industry-level Recruitment and Induction System (RSI) to automate hiring workflows and employee onboarding. Built with Laravel + Inertia.js + React 18, features rich-text job descriptions (React Quill), analytics dashboards (Chart.js, Recharts), PDF report generation (html2pdf.js), and optimized MySQL databases for candidate profiles, recruitment stages, interview tracking, and employee induction records.",
+            link: "https://rsi.3ea.in/login"
         },
         {
             id: 2,
-            title: "VoteChain",
-            category: "Blockchain",
-            technologies: "Solidity, Web3.js, React, Ethereum, IPFS, MetaMask, Node.js",
-            image: "/images/votechain.png",
-            description: "A decentralized election system built on blockchain technology ensuring transparent, tamper-proof, and verifiable voting. Features smart contracts for vote integrity and real-time result tracking."
+            title: "MockMate",
+            category: "AI / Voice Interview Platform",
+            technologies: "Next.js 15, React 19, TypeScript, Tailwind CSS v4, Vapi AI, Google AI SDK, Daily.co, Firebase, React Hook Form, Zod",
+            image: "/images/mockmate.png",
+            description: "An AI-powered voice mock interview platform using Vapi AI for real-time voice interviews, Google AI SDK for generating role-specific questions and feedback, and Daily.co for video calling. Built with Next.js 15 (Turbopack), Firebase for auth and storage, and Zod + React Hook Form for validated input — delivering a realistic, dynamic interview simulation experience.",
+            link: "https://ai-mock-interviews-application-rirz.vercel.app/"
         },
         {
             id: 3,
-            title: "EIE - Earthquake Impact Estimator",
-            category: "IoT / Hardware",
-            technologies: "Arduino, C++, IoT Sensors, Python, ML, React",
-            image: "/images/eie.png",
-            description: "A practical circuit-based IoT system utilizing Arduino to predict earthquakes before they strike. Integrates hardware sensors for real-time seismic detection and impact estimation."
+            title: "La-Horeca – Hospitality Procurement Platform",
+            category: "E-Commerce / B2B Marketplace",
+            technologies: "React 19, TypeScript, Vite 7, Tailwind CSS v4, Laravel, Inertia.js, Convex, Radix UI, React Query, Motion, Zod, Recharts, OIDC Auth",
+            image: "/images/lahoreca.png",
+            description: "A premium B2B procurement ecosystem for the hospitality industry serving 500+ clients across 12+ countries. Built with React 19 + TypeScript + Convex (real-time backend), full Radix UI / shadcn component library, React Query for server state, Motion animations, Zod validation, and OIDC-based authentication. Features 10,000+ products across 150+ global brands with category browsing, bulk inquiry, and analytics dashboards.",
+            link: "#"
         },
         {
             id: 4,
-            title: "GameKroy",
-            category: "Full Stack",
-            technologies: "React, Node.js, MongoDB, Express, Stripe, TailwindCSS",
-            image: "/images/gamekroy.png",
-            description: "A full-featured e-commerce platform for gaming products. Includes user authentication, product catalog, shopping cart, secure payments, order tracking, and admin dashboard."
+            title: "VacayVibe",
+            category: "Full Stack / Booking Platform",
+            technologies: "Node.js, Express, MongoDB, Mongoose, EJS, Passport.js, Cloudinary, Mapbox, Multer, Joi",
+            image: "/images/vacayvibe.png",
+            description: "An Airbnb-inspired vacation and property booking platform built with Node.js + Express MVC architecture and server-side EJS rendering. Features Passport.js authentication, Cloudinary image uploads, Mapbox interactive maps, Multer file handling, MongoDB session persistence, and Joi validation — deployed on Render.",
+            link: "https://vacayvibe.onrender.com/"
         },
         {
             id: 5,
-            title: "RedxChess",
-            category: "AI / Game Engine",
-            technologies: "Python, C++, Neural Networks, Bitboards, UCI Protocol",
-            image: "/images/redxchess.png",
-            description: "A high-performance chess engine rated 3640 ELO. Features advanced search algorithms, neural network evaluation, and optimized bitboard representation for lightning-fast move generation."
-        },
-        {
-            id: 6,
-            title: "Floodhub",
-            category: "AI / ML",
-            technologies: "Python, TensorFlow, Pandas, React, FastAPI, GIS",
-            image: "/images/floodhub.png",
-            description: "A flood prediction model specifically designed for Bangladesh's river systems. Analyzes weather patterns, water levels, and historical data to provide accurate flood forecasts and alerts."
-        },
-        {
-            id: 7,
-            title: "Phoenix",
-            category: "AI Assistant",
-            technologies: "Python, Speech Recognition, PyAutoGUI, OpenAI API, Tkinter",
-            image: "/images/phoenix.png",
-            description: "A JARVIS-inspired personal AI desktop assistant. Controls system functions, manages tasks, answers queries, automates workflows, and provides voice-activated computing experience."
-        },
-        {
-            id: 8,
-            title: "HekTools",
-            category: "Security / Android",
-            technologies: "Kotlin, Android SDK, Firebase, Python, Encryption",
-            image: "/images/hektools.png",
-            description: "An advanced Android monitoring and security research tool. Features remote device management, activity logging, and encrypted data transmission for security testing purposes."
+            title: "GMCP – Growth Management Consulting Program",
+            category: "Web / Consulting Platform",
+            technologies: "React 19, Vite, Tailwind CSS v4, Laravel, Three.js, Vanta.js, MediaPipe, face-api.js, Axios",
+            image: "/images/gmcp.png",
+            description: "Full-stack platform for 3EA Global's Growth Management Consulting Program — a structured 12-month consulting career pathway for the 2026 cohort. Features animated 3D backgrounds (Three.js + Vanta), AI-powered face detection during assessments (MediaPipe + face-api.js), application tracking, selection process stages, and a career path timeline with direct 3EA Global placement at 8 LPA.",
+            link: "https://gmcp.in/"
         }
     ],
     contact: {
-        email: "redoyanul1234@gmail.com",
-        github: "https://github.com/red1-for-hek",
-        linkedin: "https://linkedin.com/in/red1-for-hek",
-        twitter: "https://x.com/red_1_ul",
-        facebook: "https://www.facebook.com/redoyanulhaque.hacker.official",
-        instagram: "https://www.instagram.com/red_1_ul"
+        email: "gaurav249y@gmail.com",
+        github: "https://github.com/Gaurav270924",
+        linkedin: "https://linkedin.com/in/gaurav2707",
+        twitter: "#",
+        facebook: "#",
+        instagram: "#"
     },
     skills: {
         develop: {
-            title: "AI DEVELOPER",
-            description: "Building intelligent systems & AI solutions",
-            details: "Developing AI agents, chatbots, and machine learning models using Python, TensorFlow, and PyTorch. Specializing in LLMs, NLP, deep learning, and autonomous systems.",
-            tools: ["Python", "TensorFlow", "PyTorch", "OpenCV", "Scikit-learn", "LLMs", "NLP", "Deep Learning", "Chatbots", "AI Agents"]
+            title: "BACKEND DEV",
+            description: "Building robust APIs & server-side solutions",
+            details: "Developing scalable backend systems and RESTful APIs using Laravel, PHP, Node.js, and Express.js. Experienced in MVC architecture, database design with MySQL and MongoDB, and deploying production-grade web applications.",
+            tools: ["PHP", "Laravel", "Node.js", "Express.js", "RESTful APIs", "MVC Framework", "MySQL", "MongoDB"]
         },
         design: {
-            title: "FULL-STACK",
-            description: "Modern web development & scalable applications",
-            details: "Building responsive and performant web applications using React, Next.js, Node.js, and databases. Creating seamless user experiences with modern UI/UX principles.",
-            tools: ["React", "Next.js", "Node.js", "TypeScript", "MongoDB", "PostgreSQL", "TailwindCSS", "REST APIs", "Docker", "Git"]
+            title: "FRONTEND DEV",
+            description: "Modern, responsive web interfaces",
+            details: "Building responsive and interactive user interfaces using React.js, Next.js, and Tailwind CSS. Experienced in Inertia.js for seamless backend-frontend integration, Bootstrap for rapid UI, and OpenAI API for AI-powered features.",
+            tools: ["React.js", "Next.js", "Inertia.js", "Tailwind CSS", "Bootstrap", "HTML", "CSS", "TypeScript"]
         }
     }
 };
-
-

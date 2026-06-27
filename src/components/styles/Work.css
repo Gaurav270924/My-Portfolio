@@ -107,6 +107,13 @@
 
 .work-image-in {
   position: relative;
+  min-height: 140px;
+  background: linear-gradient(135deg, rgba(194, 164, 255, 0.1) 0%, rgba(11, 8, 12, 0.9) 100%);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .work-link {

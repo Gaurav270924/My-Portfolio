@@ -96,27 +96,31 @@
   .landing-h2-info {
     position: static !important;
     display: block;
-    width: auto;
+    width: 100% !important;
     margin: 0 !important;
     font-size: 20px !important;
     line-height: 1.5 !important;
-    white-space: normal;
+    white-space: normal !important;
+    word-break: break-word;
     text-align: center;
     height: auto !important;
     transform: none !important;
-    /* Remove any transforms */
+    letter-spacing: 0.5px !important;
+    overflow: visible !important;
   }
 
   /* Specific styling for the distinct parts */
   .landing-h2-1 {
-    font-size: 24px !important;
+    font-size: 20px !important;
     color: var(--accentColor);
     font-weight: 700;
+    letter-spacing: 0.5px !important;
   }
 
   .landing-h2-info {
-    font-size: 18px !important;
+    font-size: 17px !important;
     color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 0.5px !important;
   }
 
   .landing-info-h2::after {

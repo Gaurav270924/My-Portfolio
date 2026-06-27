@@ -20,13 +20,27 @@ const MyWorks = () => {
           <div className="myworks-card" key={project.id} data-cursor="disable">
             <div className="myworks-card-number">0{index + 1}</div>
             <div className="myworks-card-image">
-              <img src={project.image} alt={project.title} />
+              <img
+                src={project.image}
+                alt={project.title}
+                onError={(e) => { e.currentTarget.style.display = 'none'; }}
+              />
             </div>
             <div className="myworks-card-info">
               <h3>{project.title}</h3>
               <p className="myworks-card-category">{project.category}</p>
               <p className="myworks-card-description">{project.description}</p>
               <p className="myworks-card-tech">{project.technologies}</p>
+              {(project as any).link && (project as any).link !== '#' && (
+                <a
+                  href={(project as any).link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="myworks-card-link"
+                >
+                  View Live ↗
+                </a>
+              )}
             </div>
           </div>
         ))}

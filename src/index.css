@@ -189,3 +189,13 @@ body {
     font-size: 40px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  body {
+    --cWidth: calc(100% - 24px);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}

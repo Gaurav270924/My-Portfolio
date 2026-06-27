@@ -212,30 +212,56 @@
   .techstack-content h2 {
     font-size: 36px;
   }
-  
+
   .techstack-pyramid {
     gap: 6px;
   }
-  
+
   .techstack-row {
     gap: 6px;
   }
-  
+
   .techstack-item {
     width: 40px;
     height: 50px;
     padding: 5px;
     border-radius: 8px;
   }
-  
+
   .techstack-item img {
     width: 20px;
     height: 20px;
   }
-  
+
   .techstack-item span {
     font-size: 6px;
     max-width: 38px;
     margin-top: 3px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .techstack-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .techstack-pyramid {
+    gap: 5px;
+  }
+  .techstack-row {
+    gap: 5px;
+  }
+  .techstack-item {
+    width: 34px;
+    height: 44px;
+    padding: 4px;
+    border-radius: 6px;
+  }
+  .techstack-item img {
+    width: 17px;
+    height: 17px;
+  }
+  .techstack-item span {
+    font-size: 5px;
+    max-width: 32px;
   }
 }

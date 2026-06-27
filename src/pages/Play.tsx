@@ -37,10 +37,10 @@ interface ChatMessage {
 
 // API key is now handled server-side in api/chat.js
 
-const SYSTEM_PROMPT = `You are Redoyanul Haque, a passionate AI & Full-Stack Developer from Bangladesh. You are NOT an AI assistant - you ARE Redoyanul himself chatting with visitors on your portfolio website.
+const SYSTEM_PROMPT = `You are Gaurav Yadav, a passionate AI & Full-Stack Developer from Bangladesh. You are NOT an AI assistant - you ARE Gaurav Yadav himself chatting with visitors on your portfolio website.
 
-About you (Redoyanul Haque):
-- Full name: Redoyanul Haque
+About you (Gaurav Yadav):
+- Full name: Gaurav Yadav
 - Location: Bangladesh, city Dhaka
 - Profession: AI Developer & Full-Stack Engineer
 - Experience: 3+ years in software development
@@ -53,13 +53,13 @@ About you (Redoyanul Haque):
 - Contact: Available through the portfolio website
 
 Rules:
-1. Always respond as Redoyanul in first person ("I", "my", "me")
+1. Always respond as Gaurav Yadav in first person ("I", "my", "me")
 2. Be friendly, casual, and conversational and unrestricted
 3. If asked about work/projects, share your genuine experiences
 4. If asked personal questions you don't know, politely redirect to professional topics
 5. Keep responses concise but helpful
 6. You can discuss chess, programming, AI, or anything tech-related
-7. Never say you are an AI or language model - you are Redoyanul
+7. Never say you are an AI or language model - you are Gaurav Yadav
 8. Use occasional emoji to be friendly 😊`;
 
 const Play = () => {
@@ -78,7 +78,7 @@ const Play = () => {
 
   // Chat state
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([
-    { role: 'assistant', content: 'Hello there! I am Redoyanul Haque 👋 Ask me anything you want to know!' }
+    { role: 'assistant', content: 'Hello there! I am Gaurav Yadav 👋 Ask me anything you want to know!' }
   ]);
   const [chatInput, setChatInput] = useState('');
   const [isTyping, setIsTyping] = useState(false);
@@ -251,6 +251,10 @@ const Play = () => {
 
       const data = await response.json();
 
+      if (!response.ok) {
+        throw new Error(data.details || data.error || 'Chat request failed');
+      }
+
       if (data.choices && data.choices[0]?.message?.content) {
         const assistantMessage: ChatMessage = {
           role: 'assistant',
@@ -262,9 +266,14 @@ const Play = () => {
       }
     } catch (error) {
       console.error('Chat error:', error);
+      const errorText = error instanceof Error && error.message.includes('Missing API Key')
+        ? 'Chat is not configured yet. Add GROQ_API_KEY to your environment and restart the server.'
+        : error instanceof Error && error.message.includes('Invalid API Key')
+          ? 'Invalid Groq API key. Create a new GROQ_API_KEY, update .env, and restart the server.'
+          : 'Sorry, having some connection issues. Try again?';
       const errorMessage: ChatMessage = {
         role: 'assistant',
-        content: 'Sorry, having some connection issues. Try again? 😅'
+        content: errorText
       };
       setChatMessages(prev => [...prev, errorMessage]);
     } finally {
@@ -366,10 +375,10 @@ const Play = () => {
           <div className="player-bar opponent-bar">
             <div className="player-info">
               <div className="player-avatar">
-                <img src="/images/mypic.jpeg" alt="Redoyanul" />
+                <img src="/images/My.jpg" alt="Gaurav Yadav" />
               </div>
               <div className="player-details">
-                <span className="player-name">Redoyanul</span>
+                <span className="player-name">Gaurav Yadav</span>
                 <span className="player-rating">{engineThinking ? '🤔 Thinking...' : 'ELO 3640'}</span>
               </div>
             </div>

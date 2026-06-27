@@ -137,3 +137,21 @@ a.contact-social {
     width: calc(100% - 25px);
   }
 }
+@media only screen and (max-width: 500px) {
+  .contact-section h3 {
+    font-size: 26px;
+    word-break: break-word;
+  }
+  a.contact-social {
+    font-size: 15px;
+  }
+  .contact-flex {
+    gap: 25px;
+  }
+  .contact-flex h4 {
+    margin-top: 10px;
+  }
+  .contact-section {
+    padding-bottom: 40px;
+  }
+}
