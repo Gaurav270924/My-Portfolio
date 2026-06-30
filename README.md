@@ -6,7 +6,7 @@ A modern, high-performance **3D developer portfolio website** built with **React
 
 If you’re a developer looking for a **portfolio template** that feels premium, interactive, and memorable—this repo is for you.
 
-> Live preview: https://6a40126c09399564fd3b19a5--cheery-cat-bd51e1.netlify.app/
+> Live preview: https://6a44008e5da2081e080176a8--cheery-cat-bd51e1.netlify.app/
 
 ---
 
