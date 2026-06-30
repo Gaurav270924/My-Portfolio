@@ -89,7 +89,26 @@ export const config = {
             image: "/images/gmcp.png",
             description: "Full-stack platform for 3EA Global's Growth Management Consulting Program — a structured 12-month consulting career pathway for the 2026 cohort. Features animated 3D backgrounds (Three.js + Vanta), AI-powered face detection during assessments (MediaPipe + face-api.js), application tracking, selection process stages, and a career path timeline with direct 3EA Global placement at 8 LPA.",
             link: "https://gmcp.in/"
+        },
+        {
+            id: 6,
+            title: "HRMS – Human Resource Management System",
+            category: "Web / Enterprise HR Platform",
+            technologies: "Laravel, React, Inertia.js, MySQL, Axios",
+            image: "/images/hrms.png",
+            description: "Developed and enhanced a comprehensive Human Resource Management System (HRMS) by building and improving multiple core HR modules. Implemented a Holiday Management System, Staff Leave Management System, and Staff Fee Generation Module while enhancing employee management workflows and HR process automation. Improved overall UI/UX, optimized application performance, and resolved production issues to ensure a seamless user experience and reliable system operations.",
+            link: "https://hrms.herapublicschool.com/login" // Add project URL if available
+        },
+        {
+            id: 7,
+            title: "ROAR Foundation – Startup & Innovation Platform",
+            category: "Web / Startup Ecosystem Platform",
+            technologies: "Laravel, React, Inertia.js, MySQL, Axios",
+            image: "/images/roar-foundation.png",
+            description: "Designed and developed the official platform for ROAR Foundation, India's premier ecosystem for entrepreneurs, innovators, startups, and changemakers. Built a scalable web platform showcasing mentorship programs, strategic business advisory services, startup incubation, business transformation initiatives, and investment opportunities. Focused on delivering a modern, responsive UI/UX with optimized performance to help visionary founders transform innovative ideas into scalable and sustainable businesses.",
+            link: "https://roarfoundation.in/"
         }
+
     ],
     contact: {
         email: "gaurav249y@gmail.com",
