@@ -93,42 +93,49 @@ const Loading = ({ percent }: { percent: number }) => {
 export default Loading;
 
 export const setProgress = (setLoading: (value: number) => void) => {
-  let percent: number = 0;
+  let percent = 0;
+  let rafId = 0;
+  let stopped = false;
 
-  let interval = setInterval(() => {
-    if (percent <= 50) {
-      let rand = Math.round(Math.random() * 5);
-      percent = percent + rand;
-      setLoading(percent);
-    } else {
-      clearInterval(interval);
-      interval = setInterval(() => {
-        percent = percent + Math.round(Math.random());
-        setLoading(percent);
-        if (percent > 91) {
-          clearInterval(interval);
-        }
-      }, 2000);
-    }
-  }, 100);
+  const cap = 92;
+  const drift = () => {
+    if (stopped) return;
+    percent += (cap - percent) * 0.03 + 0.1;
+    if (percent > cap) percent = cap;
+    setLoading(Math.round(percent));
+    rafId = requestAnimationFrame(drift);
+  };
+  rafId = requestAnimationFrame(drift);
 
   function clear() {
-    clearInterval(interval);
+    stopped = true;
+    cancelAnimationFrame(rafId);
+    percent = 100;
     setLoading(100);
   }
 
   function loaded() {
     return new Promise<number>((resolve) => {
-      clearInterval(interval);
-      interval = setInterval(() => {
-        if (percent < 100) {
-          percent++;
-          setLoading(percent);
+      stopped = true;
+      cancelAnimationFrame(rafId);
+      const start = percent;
+      const startTime = performance.now();
+      const duration = 450;
+
+      const finish = (now: number) => {
+        const t = Math.min((now - startTime) / duration, 1);
+        const eased = 1 - Math.pow(1 - t, 3);
+        percent = start + (100 - start) * eased;
+        setLoading(Math.round(percent));
+        if (t < 1) {
+          rafId = requestAnimationFrame(finish);
         } else {
-          resolve(percent);
-          clearInterval(interval);
+          percent = 100;
+          setLoading(100);
+          resolve(100);
         }
-      }, 2);
+      };
+      rafId = requestAnimationFrame(finish);
     });
   }
   return { loaded, percent, clear };

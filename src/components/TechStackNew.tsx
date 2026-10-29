@@ -4,6 +4,7 @@ interface TechItem {
   name: string;
   icon: string;
   url: string;
+  mono?: boolean;
 }
 
 // Tech stack items based on resume skills
@@ -46,6 +47,14 @@ const techStack: TechItem[][] = [
     { name: "Postman", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg", url: "https://postman.com" },
     { name: "Visual Studio", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-original.svg", url: "https://visualstudio.microsoft.com" },
   ],
+  // Row 6 - 5 items (AI Tools)
+  [
+    { name: "OpenAI", icon: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg", url: "https://openai.com", mono: true },
+    { name: "Google Gemini", icon: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/googlegemini.svg", url: "https://ai.google.dev", mono: true },
+    { name: "GitHub Copilot", icon: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/githubcopilot.svg", url: "https://github.com/features/copilot", mono: true },
+    { name: "Claude", icon: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/claude.svg", url: "https://claude.com", mono: true },
+    { name: "MediaPipe", icon: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mediapipe.svg", url: "https://developers.google.com/mediapipe", mono: true },
+  ],
 ];
 
 const TechStackNew = () => {
@@ -83,7 +92,11 @@ const TechStackNew = () => {
                   title={tech.name}
                   data-cursor="disable"
                 >
-                  <img src={tech.icon} alt={tech.name} />
+                  <img
+                    src={tech.icon}
+                    alt={tech.name}
+                    className={tech.mono ? "techstack-icon-mono" : ""}
+                  />
                   <span>{tech.name}</span>
                 </a>
               ))}

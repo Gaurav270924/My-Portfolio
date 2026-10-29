@@ -141,6 +141,16 @@
   opacity: 1;
 }
 
+/* Solid-black single-color SVGs (simple-icons) need inverting to read on a dark card */
+.techstack-item img.techstack-icon-mono {
+  filter: invert(1) grayscale(100%) contrast(1.2) brightness(1.5);
+}
+
+.techstack-item:hover img.techstack-icon-mono {
+  filter: invert(1);
+  opacity: 1;
+}
+
 .techstack-item span {
   font-size: 9px;
   color: rgba(255, 255, 255, 0.7);

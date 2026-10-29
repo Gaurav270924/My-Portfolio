@@ -14,21 +14,43 @@ export const config = {
     },
     about: {
         title: "About Me",
-        description: "I am a Computer Science and Engineering graduate (BTech, SGPA 8.0) from Babu Banarasi Das Institute of Technology and Management, Lucknow (2025). Currently working as an Associate Software Engineer at 3EA Limited, I specialize in building full-stack web applications using the MERN stack and Laravel/PHP. I have hands-on experience developing RESTful APIs, a production Laravel-based HRMS, and AI-powered platforms. With 300+ LeetCode problems solved, I am passionate about writing clean, scalable code and turning complex requirements into elegant software solutions."
+        description: "I am a Computer Science and Engineering graduate (BTech, SGPA 8.0) from Babu Banarasi Das Institute of Technology and Management, Lucknow (2025). Currently working as an Executive–ITES at 3EA Global, I specialize in building full-stack web applications using the MERN stack and Laravel/PHP. I have hands-on experience developing RESTful APIs, a production Laravel-based HRMS, a multi-tenant ERP and HCM platform, and AI-powered platforms. With 300+ LeetCode problems solved, I am passionate about writing clean, scalable code and turning complex requirements into elegant software solutions."
     },
     experiences: [
         {
-            position: "Associate Software Engineer",
-            company: "3EA Limited",
-            period: "Aug 2025 - Present",
+            position: "Executive – ITES",
+            company: "3EA Global",
+            period: "Sep 2026 - Present",
             location: "Lucknow, Uttar Pradesh",
-            description: "Contributing to live production projects using PHP and Laravel. Developed and integrated RESTful APIs and independently built a Laravel-based HRMS for Hera Public School, enabling staff attendance tracking, leave workflows, and automated payroll generation.",
+            description: "Developing software using PHP and Laravel within the organization's enterprise application environment, and contributing to a multi-tenant ERP and HCM platform built with Laravel, React, Inertia.js, and MySQL.",
             responsibilities: [
-                "Successfully completed an 8-month, industry-focused web development internship, contributing to live production projects using PHP and Laravel",
-                "Developed and integrated RESTful APIs with front-end interfaces to ensure smooth and efficient data exchange",
+                "Develop software using PHP and Laravel within the organization's enterprise application environment",
+                "Contribute to a multi-tenant ERP and HCM platform built with Laravel, React, Inertia.js, and MySQL"
+            ],
+            technologies: ["PHP", "Laravel", "React", "Inertia.js", "MySQL"]
+        },
+        {
+            position: "Associate",
+            company: "3EA Global",
+            period: "Feb 2026 - Aug 2026",
+            location: "Lucknow, Uttar Pradesh",
+            description: "Developed and integrated RESTful APIs with frontend interfaces to support application data exchange and business workflows.",
+            responsibilities: [
+                "Developed and integrated RESTful APIs with frontend interfaces to support application data exchange and business workflows"
+            ],
+            technologies: ["PHP", "Laravel", "RESTful APIs", "MySQL"]
+        },
+        {
+            position: "Intern",
+            company: "3EA Global",
+            period: "Aug 2025 - Feb 2026",
+            location: "Lucknow, Uttar Pradesh",
+            description: "Contributed to web development using PHP and Laravel on live production projects, independently building a Laravel-based HRMS for Hera Public School.",
+            responsibilities: [
+                "Contributed to web development using PHP and Laravel as part of an industry-focused internship on live production projects",
                 "Independently developed and deployed a Laravel-based HRMS for Hera Public School, enabling staff attendance tracking, leave workflows, and automated payroll generation"
             ],
-            technologies: ["PHP", "Laravel", "RESTful APIs", "MySQL", "MVC Architecture"]
+            technologies: ["PHP", "Laravel", "MySQL", "MVC Architecture"]
         },
         {
             position: "MERN Stack Development Intern",
